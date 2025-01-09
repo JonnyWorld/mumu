@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 智能美图</title>
+    <!-- 引入Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHq6O0D1K7P6h2Ll4Yf3Jb6k4uv/MEp8qZJn/m6PWl4Othl/5pjQv7ZxMjQV2ULXrm5XqjIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* 全局样式swwss */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0C6F5A; /* 整体背景颜色 */
+            color: #ffffff; /* 全局字体颜色设置为白色 */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+            background-color: #0C6F5A; /* 内容区域背景颜色 */
+            max-width: 1200px; /* 设置最大宽度 */
+            margin: 0 auto; /* 居中容器 */
+            width: 100%; /* 确保容器宽度为100% */
+            padding: 40px;
+        }
+        .left, .right {
+            flex: 1;
+            padding: 20px;
+        }
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .right img {
+            width: 300px;   /* 设置图片宽度 */
+            height: 300px;  /* 设置图片高度 */
+            object-fit: cover; /* 确保图片按比例填充 */
+            border-radius: 8px;
+            border: 2px solid #ffffff; /* 添加白色边框以突出图片 */
+        }
+        h1 {
+            color: #ffffff; /* 标题颜色设置为白色 */
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #ffffff; /* 子标题颜色设置为白色 */
+            margin-bottom: 15px;
+        }
+        p {
+            color: #ffffff; /* 段落文本颜色设置为白色 */
+            line-height: 1.6;
+        }
+        .features {
+            margin-top: 30px;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .features li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: #ffffff; /* 列表项文本颜色设置为白色 */
+        }
+        .features li i {
+            color: #FFD700; /* 图标颜色设置为金色，以突出显示 */
+            margin-right: 10px;
+            font-size: 18px;
+            min-width: 24px; /* 确保图标与文本对齐 */
+            text-align: center;
+        }
+        footer {
+            background-color: #333333; /* 底部背景颜色保持为深灰色 */
+            color: #ffffff; /* 底部字体颜色设置为白色 */
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .left, .right {
+                padding: 20px;
+            }
+            .right img {
+                width: 100%;
+                height: auto;
+                border: none; /* 移除边框以适应小屏设备 */
+            }
+            .features li {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧文案 -->
+        <div class="left">
+            <h1>AI 智能美图：让你的照片更精彩</h1>
+            <p>我们专注于利用人工智能技术，为用户带来全新的照片美化体验。通过先进的图像识别和深度学习算法，AI 智能美图能够自动识别照片中的人物、背景与细节，一键智能优化，让每一张照片都展现最完美的状态。</p>
+            
+            <div class="features">
+                <h2>核心功能</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> 智能修图：精准人脸识别，自动美颜、瘦脸、磨皮、祛斑等，让你轻松拥有自然的美丽光彩。</li>
+                    <li><i class="fas fa-palette"></i> 风格滤镜：多样化滤镜与特效，一键切换出你想要的艺术风格，随时打造时尚大片。</li>
+                    <li><i class="fas fa-images"></i> 背景优化：智能检测人物与背景，自动虚化或替换背景，轻松拍出大片级氛围。</li>
+                    <li><i class="fas fa-sliders-h"></i> 个性化调节：保留专业模式，可根据个人喜好自由调节亮度、对比度、饱和度等，为创意留出更多空间。</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 右侧图片 -->
+        <div class="right">
+            <img src="https://log-hk.oss-cn-hongkong.aliyuncs.com/res/Test/b.JPG" alt="AI 智能美图示意图">
+        </div>
+    </div>
+    
+    <!-- 底部 -->
+    <footer>
+        © 2024, Mumu Studio. All Rights Reserved. 永济市沐沐科技工作室版权所有
+    </footer>
+</body>
+</html>
